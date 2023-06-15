@@ -50,6 +50,7 @@ body{
     top: 0;
     left: 0;
     display: flex;
+    overflow-y: scroll;
 }
 .Blank{
     width: 59%;
@@ -61,7 +62,7 @@ body{
     padding: 1%;
     padding-top: 0px;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom:2%;
     margin-right: 0px;
     background-color: #FBEAEB;
 }
@@ -131,11 +132,15 @@ form{
     resize: none;
 }
 footer{
+    width: 100%;
     background-color: lavender;
     text-align: center;
     font-size: 175%;
+    left: 0;
     bottom: 0;
     padding: 2%;
+    margin-bottom: 0px;
+
 }
 .Fill{
     margin-top: 18%;
@@ -165,6 +170,7 @@ footer{
         top: 0;
         left: 0;
         display: block;
+        overflow-y: scroll;
     }
     .Blank{
         display: none;
@@ -180,6 +186,7 @@ footer{
         margin-bottom: 0px;
     }
     footer{
+        position: fixed;
         left: 0;
         bottom: 0;
         font-size: 125%;
