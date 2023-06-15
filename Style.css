@@ -7,7 +7,9 @@ body{
     margin-top: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
-    overflow-x:hidden; 
+    margin-right: 0px;
+    padding: 0px;
+    background-color: #2F3C7E;
 }
 .Block1{
     padding: 1px;
@@ -48,13 +50,17 @@ body{
     display: flex;
 }
 .Blank{
-    width: 65%;
+    width: 57%;
     background-color: #2F3C7E;
 }
 .Form{
-    width: 35%;
+    right: 0;
+    width: 36%;
     padding: 1%;
     padding-top: 0px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 0px;
     background-color: #FBEAEB;
 }
 form{
@@ -131,7 +137,7 @@ footer{
 }
 .Fill{
     margin-top: 18%;
-    margin-left: 25%;
+    margin-left: 22%;
     margin-right: 20%;
     transform: translate(-8%,-25%);
     font-size: 400%;
