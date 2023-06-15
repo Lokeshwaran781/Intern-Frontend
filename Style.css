@@ -1,0 +1,174 @@
+body{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.Block1{
+    padding: 1px;
+}
+#fname,#lname,#email,#mobile,#CountryCode{
+    margin-bottom: 2%;
+    margin-top: 0.5%;
+    border: 1px solid black;
+    padding: 0.80%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 97%;
+    font-size: 100%;
+}
+#fname,#lname{
+    width: 46%;
+}
+#fname:first-child{
+    margin-right: 2%;
+}
+#CountryCode{
+    margin-right: 2%;
+    text-align: center;
+    width: 12%;
+}
+#mobile{
+    width: 80%;
+}
+#msg1,#msg2,#msg3,#msg4{
+    color: red;
+}
+#asterid1{
+    color: red;
+}
+.MainContent{
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.Blank{
+    width: 65%;
+    background-color: #2F3C7E;
+}
+.Form{
+    width: 35%;
+    padding: 1%;
+    padding-top: 0px;
+    background-color: #FBEAEB;
+}
+form{
+    padding: 5%;
+    padding-top: 1%;
+}
+#specify{
+    visibility: hidden;
+    margin-left: 3%;
+}
+.Topic{
+    font-size: 130%;
+}
+.Services{
+    font-size: 140%;
+}
+.io{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 0%;
+    width: 100%;
+}
+.s1{
+    width: 100%;
+    font-size: 115%;
+    margin-right: 0px;
+}
+.button{
+    display: flex;
+    margin-top: 4%;
+}
+.submit{
+    margin-right: 2%;
+    width: 50%;
+}
+.reset{
+    width: 50%;
+}
+.submit input{
+    width: 100%;
+    font-size: 120%;
+    padding: 3%;
+    font-style: bold;
+    background: darkcyan;
+    color: white;
+    font-style: italic;
+}
+.reset input{
+    width: 100%;
+    font-size: 120%;
+    padding: 3%;
+    background: darkcyan;
+    color: white;
+    font-style: italic;
+}
+.Block{
+    margin-bottom: 1%;
+}
+#Description{
+    width: 98%;
+    border: 1px solid black;
+    font-size: 125%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    resize: none;
+}
+footer{
+    background-color: lavender;
+    text-align: center;
+    font-size: 175%;
+    bottom: 0;
+    padding: 2%;
+}
+.Fill{
+    margin-top: 18%;
+    margin-left: 25%;
+    margin-right: 20%;
+    transform: translate(-8%,-25%);
+    font-size: 400%;
+    color: transparent;
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: -660px 0;
+    animation: backcolor 2.5s linear infinite alternate;
+    animation-delay: 0s;
+}
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+
+}
+
+
+@media only screen and (max-width: 800px){
+    .MainContent{
+        top: 0;
+        left: 0;
+        display: block;
+    }
+    .Blank{
+        display: none;
+    }
+    .Form{
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1%;
+        padding-top: 0px;
+        background-color: #FBEAEB;
+    }
+    footer{
+        font-size: 125%;
+    }
+}

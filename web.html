@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>Forms</Title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" text="text/javascript"></script>
+    <link href="Style.css" rel="stylesheet">
+    <script src="Script.js"></script>
+</head>
+<body>
+    <div class="MainContent">
+        <div class="Blank">
+            <h2 class="Fill">Fill The Form....</h2>
+        </div>
+        <div class="Form">
+            <form id="Form" name="Form" onsubmit="return validate()">
+                <center><h1>Let's Level up your brand, together</h1></center>
+                <div class="Block"><span class="Topic">Name&nbsp;<span id="asterid1">*</span></span><br>
+                <div class="Block1">
+                    <input type="text" id="fname" placeholder="First Name">
+                    <input type="text" id="lname" placeholder="Last Name">
+                    <div id="msg1"></div>
+                </div></div>
+                <div class="Block"><span class="Topic">Email&nbsp;<span id="asterid1">*</span></span><br>
+                <div class="Block2">
+                    <input type="text" id="email" placeholder="Example@gmail.com">
+                    <div id="msg2"></div>
+                </div></div>
+                <div class="Block"><span class="Topic">Phone&nbsp;<span id="asterid1">*</span></span><br>
+                <div class="Block3">
+                    <input type="text" id="CountryCode" value="+91" disabled>
+                    <input type="text" id="mobile" placeholder="Enter 10 Digit Number" minlength="10" maxlength="10">
+                    <div id="msg3"></div>
+                </div></div>
+                <div class="Block">
+                    <span class="Topic">Description&nbsp;<span id="asterid1">*</span></span><br>
+                    <div class="Block4">
+                        <textarea id="Description" rows="5" placeholder="Enter Your Description"></textarea>
+                        <div id="msg4"></div>
+                    </div>
+                </div>
+                <div class="ch">
+                    <span class="Services">Services:</span>
+                    <div class="io">
+                        <input type="checkbox" name="services" value="web"><span class="s1">Web-Development</span>
+                    </div> 
+                    <div class="io">
+                        <input type="checkbox" name="services" value="ai"><span class="s1">Artificial-Intelligence</span>
+                    </div>
+                    <div class="io">
+                        <input type="checkbox" name="services" value="cloud"><span class="s1">Cloud-Computing</span>
+                    </div>
+                    <div class="io">
+                        <input type="checkbox" name="services" value="Mobile"><span class="s1">Mobile-App-Development</span>
+                    </div>
+                    <div class="io">
+                        <input type="checkbox" name="services" value="ui/ux"><span class="s1">UI/UX-Designing</span>
+                    </div> 
+                    <div class="io">
+                        <input type="checkbox" name="services" id="others" value="others" onclick="Spec()"><span class="s1">Others</span><input type="text" id="specify">
+                    </div>
+               </div>
+                <div class="button">
+                    <div class="submit"><input type="submit" value="Submit"></div>
+                    <div class="reset"><input type="button" onclick="Reset()" value="Reset form"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>Website Designed by Lokeshwaran M S</footer>
+</body>
+</html>
