@@ -1,3 +1,4 @@
+
 function validate() {
   let fname = document.getElementById('fname').value;
   let lname = document.getElementById('lname').value;
@@ -150,7 +151,7 @@ function sendmsg(){
       services.push(document.getElementById("specify").value);
     }
     else{
-      services.push(checkboxes[i].value);
+      services.push(checkboxes[i].value)
     }
   }
   var msg={};
@@ -160,21 +161,28 @@ function sendmsg(){
   msg.description=Description;
   msg.services=services;
   var message=JSON.stringify(msg);
-  console.log(message); 
-var myHeaders = new Headers();
+  console.log(message);
+  
+  
+  	var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+myHeaders.append("mode", "no-cors");
+
 var urlencoded = new URLSearchParams();
 urlencoded.append("name", name);
 urlencoded.append("email", email);
 urlencoded.append("phone", phone);
 urlencoded.append("description", Description);
 urlencoded.append("services", services);
+
 var requestOptions = {
   method: 'POST',
   headers: myHeaders,
   body: urlencoded,
-  redirect: 'follow'
+  redirect: 'follow',
+  mode:'no-cors'
 };
+
 fetch("http://formz.in/api/task", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
