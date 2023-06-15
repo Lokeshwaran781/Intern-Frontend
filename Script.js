@@ -142,7 +142,7 @@ window.onload = function() {
 function sendmsg(){
   let name = document.getElementById('fname').value+" "+document.getElementById('lname').value;
   let email=document.getElementById('email').value;
-  let phone=document.getElementById('CountryCode').value+document.getElementById('mobile').value;
+  let phone=document.getElementById('mobile').value;
   let Description=document.getElementById('Description').value;
   var services = []
   var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
@@ -151,36 +151,33 @@ function sendmsg(){
       services.push(document.getElementById("specify").value);
     }
     else{
-      services.push(checkboxes[i].value)
+      services.push(checkboxes[i].value);
     }
   }
   var msg={};
-  msg.Name=name;
-  msg.Email=email;
-  msg.Phone=phone;
-  msg.Description=Description;
-  msg.Services=services;
+  msg.name=name;
+  msg.email=email;
+  msg.phone=phone;
+  msg.description=Description;
+  msg.services=services;
   var message=JSON.stringify(msg);
-  var data=JSON_to_URLEncoded(message); 
-  fetch('http://formz.in/api/task', {
-    method: 'POST',
-    body: data,
-    headers: {
-      'Content-type': 'application/x-www-form-urlencoded'
-    }
-  })
-  .then(response => response.json())
-  .then(json => {
-    console.log(json);
-  });
-}
-function JSON_to_URLEncoded(element,key,list){
-    var list = list || [];
-    if(typeof(element)=='object'){
-      for (var idx in element)
-        JSON_to_URLEncoded(element[idx],key?key+'['+idx+']':idx,list);
-    } else {
-      list.push(key+'='+encodeURIComponent(element));
-    }
-    return list.join('&');
+  console.log(message); 
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+var urlencoded = new URLSearchParams();
+urlencoded.append("name", name);
+urlencoded.append("email", email);
+urlencoded.append("phone", phone);
+urlencoded.append("description", Description);
+urlencoded.append("services", services);
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: urlencoded,
+  redirect: 'follow'
+};
+fetch("http://formz.in/api/task", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));  
 }
