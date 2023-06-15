@@ -169,6 +169,8 @@ footer{
     .MainContent{
         top: 0;
         left: 0;
+        margin: 0px;
+        width: 100%;
         display: block;
     }
     .Blank{
@@ -181,6 +183,7 @@ footer{
         padding: 1%;
         padding-top: 0px;
         background-color: #FBEAEB;
+        margin-right: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -188,6 +191,8 @@ footer{
         position: fixed;
         left: 0;
         bottom: 0;
-        font-size: 125%;
+        text-align: center;
+        font-size: 120%;
+        margin-top: 0px;
     }
 }
