@@ -97,14 +97,14 @@ form{
     margin-top: 4%;
 }
 .submit{
-    margin-right: 4%;
+    margin-right: 2%;
     width: 50%;
 }
 .reset{
     width: 50%;
 }
 .submit input{
-    width: 105%;
+    width: 100%;
     font-size: 120%;
     padding: 3%;
     font-style: bold;
@@ -169,6 +169,8 @@ footer{
     .MainContent{
         top: 0;
         left: 0;
+        width: 100%;
+        margin-right: 0px;
     }
     .Blank{
         display: none;
@@ -183,12 +185,13 @@ footer{
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 5%;
+
     }
     footer{
         position: fixed;
         left: 0;
         bottom: 0;
         text-align: center;
-        font-size: 100%;
+        font-size: 110%;
     }
 }
