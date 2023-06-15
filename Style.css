@@ -177,16 +177,14 @@ footer{
         display: none;
     }
     .Form{
-        top: 0;
-        left: 0;
-        right: 0;
         width: 100%;
         padding: 1%;
         padding-top: 0px;
         background-color: #FBEAEB;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-right: 1px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        margin-left:1px;
     }
     footer{
         position: fixed;
