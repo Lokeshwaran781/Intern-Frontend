@@ -166,12 +166,15 @@ footer{
 
 
 @media only screen and (max-width: 660px){
+    *{
+        overflow-x:hidden;
+    }
     .MainContent{
         top: 0;
         left: 0;
         width: 100%;
         margin-right: 0px;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .Blank{
         display: none;
@@ -186,7 +189,7 @@ footer{
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 5%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     footer{
         position: fixed;
@@ -194,6 +197,6 @@ footer{
         bottom: 0;
         text-align: center;
         font-size: 110%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
