@@ -163,7 +163,7 @@ function sendmsg(){
   console.log(message);
   
   
-  	var myHeaders = new Headers();
+var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 myHeaders.append("mode", "no-cors");
 
