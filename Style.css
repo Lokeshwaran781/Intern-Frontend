@@ -12,6 +12,7 @@ body{
     padding: 0px;
     background-color: #2F3C7E;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 .Block1{
     padding: 1px;
@@ -50,7 +51,6 @@ body{
     top: 0;
     left: 0;
     display: flex;
-    overflow-y: scroll;
 }
 .Blank{
     width: 59%;
@@ -165,12 +165,11 @@ footer{
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 660px){
     .MainContent{
         top: 0;
         left: 0;
         display: block;
-        overflow-y: scroll;
     }
     .Blank{
         display: none;
