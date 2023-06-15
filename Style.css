@@ -4,12 +4,14 @@ body{
     bottom: 0;
     right: 0;
     width: 100%;
+    height: 100%;
     margin-top: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
     margin-right: 0px;
     padding: 0px;
     background-color: #2F3C7E;
+    overflow-x: hidden;
 }
 .Block1{
     padding: 1px;
@@ -50,7 +52,7 @@ body{
     display: flex;
 }
 .Blank{
-    width: 57%;
+    width: 59%;
     background-color: #2F3C7E;
 }
 .Form{
@@ -137,7 +139,7 @@ footer{
 }
 .Fill{
     margin-top: 18%;
-    margin-left: 22%;
+    margin-left: 23%;
     margin-right: 20%;
     transform: translate(-8%,-25%);
     font-size: 400%;
@@ -174,8 +176,12 @@ footer{
         padding: 1%;
         padding-top: 0px;
         background-color: #FBEAEB;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     footer{
+        left: 0;
+        bottom: 0;
         font-size: 125%;
     }
 }
